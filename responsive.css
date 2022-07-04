@@ -27,3 +27,9 @@
         height: 120%
     }
 }
+
+@media (max-width: 305px) {
+    footer h1 {
+        font-size: 14px;
+    }
+}
