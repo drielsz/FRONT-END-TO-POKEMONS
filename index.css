@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Proxima+Nova");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+* {
+  font-family: "proxima-nova", sans-serif;
+}
+:root {
+  --principal-color: #e1bd00;
+  --gray-color: #646378;
+}
+
+body,
+html {
+  margin: 0;
+  height: 100%;
+}
+
+body .frame,
+.screen {
+  height: 100%;
+  padding: 0 18.75vw 0 18.75vw; /* topo | direita | inferior | esquerda */
+  background-image: url(https://i.ibb.co/v1nKW5Z/image.png);
+  background-size: cover;
+  background-position: center;
+}
+
+header nav {
+  height: 80px;
+  flex: 1;
+  display: flex;
+  background-color: #ffe769;
+  padding: 0 18.75vw 0 18.75vw; /* topo | direita | inferior | esquerda */
+}
+
+.group {
+  background-color: var(--gray-color);
+  height: auto;
+  width: auto;
+  padding: 0 6.6875vw 0 6.6875vw; /* topo | direita | inferior | esquerda */
+}
+
+.container-to-image {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container-image-pokemon {
+  width: 200px;
+  height: 200px;
+  min-width: 150px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  background-color: #444273;
+}
+
+.container-image-pokemon img {
+  width: 100%;
+  height: 100%;
+  background-size: auto;
+}
+
+section input {
+  width: 55%;
+  padding: 15px;
+  margin-block: 40px;
+  height: 16px;
+  background: #ffffff;
+  border: 1px solid #444273;
+
+  font-family: "proxima-nova", sans-serif;
+}
+
+section input::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+
+  font-family: "proxima-nova", sans-serif;
+}
+
+.container-to-input {
+  flex: 1;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.search {
+  width: 25px;
+  padding: 15px;
+  height: 16px;
+  background: #ffffff;
+  border: 1px solid #444273;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search .icon i {
+  font-size: 25px;
+  color: #e1bd00;
+}
+
+#number {
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#name-pokemon {
+  margin-top: 4px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+#number{
+    color: white;
+}
+#name-pokemon {
+    color: #FFFBE5;
+}
+
+#section-pokemons{
+    height: auto;
+    width: 100%;
+    background-color: #2A293F;
+    
+    padding: 0 0.5vw 0 0.5vw; /* topo | direita | inferior | esquerda */
+}
