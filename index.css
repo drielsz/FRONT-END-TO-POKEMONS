@@ -48,12 +48,12 @@ header nav h1 {
 
 .container-to-image {
   display: flex;
-    gap: 100px 50px;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0px;
-    padding: 0px 0px 100px;
-    flex-direction: row;
+  gap: 100px 50px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0px;
+  padding: 0px 0px 100px;
+  flex-direction: row;
 }
 
 .container-image-pokemon {
@@ -171,12 +171,23 @@ li {
 
 li h1 {
   position: absolute;
-  bottom: -65px;
+  bottom: -75px;
   left: 0;
   font-family: "Proxima Nova";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   color: #fffbe6;
+  text-transform: capitalize;
+}
+
+li h2 {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
   text-transform: capitalize;
 }
