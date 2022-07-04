@@ -1,0 +1,29 @@
+@media (max-width: 895px) {
+    .container-to-image {
+        justify-content: center;
+    }
+    .container-to-input {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 797px) {
+    body .frame, .screen {
+        padding: 0;
+    }
+    .group {
+        padding: 0;
+    }
+    .group-all {
+        width: 100%;
+        height: auto;
+    }
+    .container-image-pokemon {
+        margin: 0;
+        width: 100%;
+    }
+    .container-image-pokemon img {
+        width: 120%;
+        height: 120%
+    }
+}

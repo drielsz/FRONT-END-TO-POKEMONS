@@ -15,24 +15,27 @@ html {
   height: 100%;
 }
 
-body .frame,
-.screen {
-  height: 100%;
-  padding: 0 18.75vw 0 18.75vw; /* topo | direita | inferior | esquerda */
-  background-image: url(https://i.ibb.co/v1nKW5Z/image.png);
-  background-size: cover;
-  background-position: center;
-}
-
 header nav {
   height: 80px;
   flex: 1;
   display: flex;
   background-color: #ffe769;
   padding: 0 18.75vw 0 18.75vw; /* topo | direita | inferior | esquerda */
+  justify-content: center;
+  align-items: center;
+}
+
+header nav h1 {
+  font-size: 42px;
+  color: #444273;
+  font-family: 'Pokemon Solid';
+  margin: 0;
 }
 
 .group {
+  background-image: url(https://i.ibb.co/v1nKW5Z/image.png);
+  background-size: cover;
+  background-position: center;
   background-color: var(--gray-color);
   height: auto;
   width: auto;
@@ -134,4 +137,9 @@ section input::placeholder {
     background-color: #2A293F;
     
     padding: 0 0.5vw 0 0.5vw; /* topo | direita | inferior | esquerda */
+}
+
+
+.container-to-input {
+  justify-content: center;
 }
