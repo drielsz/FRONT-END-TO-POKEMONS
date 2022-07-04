@@ -15,7 +15,7 @@ function append(parent, el) {
 
 const ul = document.getElementById("authors");
 
-var url = Get("https://pokeapi.co/api/v2/pokemon");
+var url = Get("https://pokeapi.co/api/v2/pokemon?offset=20&limit=24");
 var JSONurl = JSON.parse(url);
 var ArrayJson = Array(JSONurl);
 var ResultsJson = ArrayJson[0].results;
@@ -25,7 +25,9 @@ for (let i = 0; i < ResultsJson.length; i++) {
   fetch(linkPokemon)
     .then((resp) => resp.json())
     .then(function (data) {
-      
+      console.log(url)   
+
+
       let ids = data.id;
 
       let authors = data.sprites.front_default;
