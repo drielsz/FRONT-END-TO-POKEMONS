@@ -28,7 +28,7 @@ header nav {
 header nav h1 {
   font-size: 42px;
   color: #444273;
-  font-family: 'Pokemon Solid';
+  font-family: "Pokemon Solid";
   margin: 0;
 }
 
@@ -42,11 +42,18 @@ header nav h1 {
   padding: 0 6.6875vw 0 6.6875vw; /* topo | direita | inferior | esquerda */
 }
 
+.group-all {
+  cursor: pointer;
+}
+
 .container-to-image {
   display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
-  justify-content: space-between;
+    gap: 100px 50px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0px;
+    padding: 0px 0px 100px;
+    flex-direction: row;
 }
 
 .container-image-pokemon {
@@ -124,22 +131,52 @@ section input::placeholder {
   font-size: 24px;
   line-height: 24px;
 }
-#number{
-    color: white;
+#number {
+  color: white;
 }
 #name-pokemon {
-    color: #FFFBE5;
+  color: #fffbe5;
 }
 
-#section-pokemons{
-    height: auto;
-    width: 100%;
-    background-color: #2A293F;
-    
-    padding: 0 0.5vw 0 0.5vw; /* topo | direita | inferior | esquerda */
-}
+#section-pokemons {
+  height: auto;
+  width: 100%;
+  background-color: #2a293f;
 
+  padding: 0 0.5vw 0 0.5vw; /* topo | direita | inferior | esquerda */
+}
 
 .container-to-input {
   justify-content: center;
+}
+
+li {
+  list-style: none;
+  width: 200px;
+  height: 200px;
+  max-height: 200px;
+  max-width: 200px;
+  min-width: 161px;
+  display: flex;
+  flex: 1 1 0%;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+  background-color: #444273;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+}
+
+li h1 {
+  position: absolute;
+  bottom: -65px;
+  left: 0;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #fffbe6;
+  text-transform: capitalize;
 }
