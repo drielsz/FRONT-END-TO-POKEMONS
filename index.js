@@ -15,10 +15,12 @@ function append(parent, el) {
 
 const ul = document.getElementById("authors");
 
-var url = Get("https://pokeapi.co/api/v2/pokemon?offset=20&limit=24");
+var url = Get("https://pokeapi.co/api/v2/pokemon?limit=120&offset=0");
 var JSONurl = JSON.parse(url);
 var ArrayJson = Array(JSONurl);
 var ResultsJson = ArrayJson[0].results;
+
+console.log(ResultsJson)
 
 for (let i = 0; i < ResultsJson.length; i++) {
   var linkPokemon = ResultsJson[i].url;
@@ -30,12 +32,12 @@ for (let i = 0; i < ResultsJson.length; i++) {
 
       let ids = data.id;
 
-      let authors = data.sprites.front_default;
+      let authors = data.sprites.other.dream_world.front_default;
       let li = createNode("li");
 
       let img = createNode("img");
 
-      img.style.cssText = "width: 100%;height: 100%;background-size: auto;";
+      img.style.cssText = "width: 55%;height: 55%;background-size: auto;";
 
       let span = createNode("h1")
       let h2 = createNode("h2")
