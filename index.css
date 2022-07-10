@@ -178,6 +178,7 @@ li {
   align-content: center;
   justify-content: center;
   position: relative;
+  cursor: pointer;
 }
 
 li h1 {
