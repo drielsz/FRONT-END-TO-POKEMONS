@@ -17,6 +17,10 @@ html {
   height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header nav {
   height: 80px;
   flex: 1;
@@ -25,6 +29,11 @@ header nav {
   padding: 0 18.75vw 0 18.75vw; /* topo | direita | inferior | esquerda */
   justify-content: center;
   align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
 }
 
 header nav h1 {
@@ -35,9 +44,9 @@ header nav h1 {
 }
 
 .group {
-  background-image: url(https://i.ibb.co/v1nKW5Z/image.png);
+  background-image: url("https://i.ibb.co/v1nKW5Z/image.png");
   background-size: cover;
-  background-position: center;
+  background-attachment: scroll;
   background-color: var(--gray-color);
   height: auto;
   width: auto;
@@ -145,7 +154,7 @@ section input::placeholder {
   width: 100%;
   background-color: #2a293f;
 
-  padding: 0 0.5vw 0 0.5vw; /* topo | direita | inferior | esquerda */
+  padding: 100px 0.5vw 0 0.5vw; /* topo | direita | inferior | esquerda */
 }
 
 .container-to-input {
