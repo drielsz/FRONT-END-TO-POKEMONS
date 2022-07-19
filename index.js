@@ -14,7 +14,7 @@ function append(parent, el) {
 }
 
 const ul = document.getElementById("authors"),
-  url = Get(`https://pokeapi.co/api/v2/pokemon/`),
+  url = Get(`https://pokeapi.co/api/v2/pokemon?limit=50&offset=0`),
   JSONurl = JSON.parse(url),
   ArrayJson = Array(JSONurl),
   ResultsJson = ArrayJson[0].results;
