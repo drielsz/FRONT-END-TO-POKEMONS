@@ -14,15 +14,37 @@ function append(parent, el) {
 }
 
 const ul = document.getElementById("authors"),
-  searchInput = document.getElementById("user-search"),
-  url = Get("https://pokeapi.co/api/v2/pokemon?limit=96&offset=0"),
+  url = Get(`https://pokeapi.co/api/v2/pokemon/`),
   JSONurl = JSON.parse(url),
   ArrayJson = Array(JSONurl),
   ResultsJson = ArrayJson[0].results;
 
-var pokeName, pokemon, card;
+function searchShow(query) {
+  const urlPoke = `https://pokeapi.co/api/v2/pokemon/${query}`;
+  fetch(urlPoke)
+    .then((response) => response.json())
+    .then((jsonData) => {
+      const results = jsonData.sprites.other.dream_world.front_default;
+      renderResults(results)
+    });
+}
 
-pokeName = searchInput.value;
+function renderResults(results) {
+  ul.innerHTML = ""
+  Array.from(results).forEach(result => {
+    img = createNode("img");
+    img.src = results;
+
+    append(ul, image);
+  })
+}
+
+window.onload = () => {
+  const searchInput = document.getElementById("searchbar");
+  searchInput.onkeyup = (event) => {
+    searchShow(searchInput.value.toLowerCase());
+  };
+};
 
 function getColor(imageElem, ratio) {
   const canvas = document.createElement("canvas");
